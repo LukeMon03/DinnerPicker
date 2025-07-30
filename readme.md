@@ -1,4 +1,4 @@
-# Dinner Pickers
+# Dinner Picker
 
 A website designed to help Becca and Luke decide what recipes to cook from their several cook books
 
