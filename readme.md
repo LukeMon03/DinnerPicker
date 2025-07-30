@@ -50,4 +50,4 @@ You can not use this project, its mine. Mom said its my turn with the project
 
 ## Acknowledgments
 
-My loving girlfried Rebecca Hall
+My loving girlfriend Rebecca
