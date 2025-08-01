@@ -1,7 +1,8 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { DinnerMenuComponent } from './dinner-menu/dinner-menu.component';
+import { Spinner } from './spinner/spinner';
 
 export const routes: Routes = [
-    { path: 'home-component', component: HomeComponent },
-
+    { path: 'dinner-menu-component', component: DinnerMenuComponent },
+    { path: 'spinner', component: Spinner}
 ];
