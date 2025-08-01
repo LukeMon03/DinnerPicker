@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dinner Picker!</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <link rel="stylesheet" href=".\src\index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <audio id="bg-music" autoplay loop muted>
+  <source src="audio/Timecop1983_On_the_Run.mp3" type="audio/mpeg" />
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+  document.body.addEventListener(
+    'click',
+    function () {
+      const audio = document.getElementById('bg-music');
+      if (audio && audio.muted) {
+        audio.muted = false;
+        audio.play().catch(err => {
+          console.warn('Audio playback failed:', err);
+        });
+      }
+    },
+    { once: true }
+  );
+</script>
+
+  <app-root></app-root>
+</body>
+
+</html>
