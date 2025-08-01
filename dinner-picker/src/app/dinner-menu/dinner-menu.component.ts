@@ -14,6 +14,6 @@ export class DinnerMenuComponent {
   }
 
   openSpinner(): void {{
-    this.router.navigate(['/spinner']);
+    this.router.navigate(['/recipe-selector-component']);
   }}
 }

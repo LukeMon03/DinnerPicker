@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Spinner } from './spinner';
+import { RecipeSelectorComponent } from './recipe-selector.component';
 
 describe('Spinner', () => {
-  let component: Spinner;
-  let fixture: ComponentFixture<Spinner>;
+  let component: RecipeSelectorComponent;
+  let fixture: ComponentFixture<RecipeSelectorComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Spinner]
+      imports: [RecipeSelectorComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Spinner);
+    fixture = TestBed.createComponent(RecipeSelectorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
