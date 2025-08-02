@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReviewComponent } from "../review/review.component";
 
 @Component({
   selector: 'app-recipe-selector',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ReviewComponent],
   templateUrl: './recipe-selector.component.html',
   styleUrls: ['./recipe-selector.component.css']
 })

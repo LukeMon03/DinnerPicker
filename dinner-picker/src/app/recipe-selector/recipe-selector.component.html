@@ -32,15 +32,5 @@
   <div>
     <button *ngIf="showReviewButton" class="float-in" style="animation-duration:5.0s;" id="reviewButton" (click)="openReview()">Review</button>
   </div>
-
-  <!-- TODO - Expand review form and also move it to its own project that can be called -->
-  <div *ngIf="showReviewForm" class="float-in mt-4" style="max-width: 800px; width: 100%; animation-duration:5.0s;">
-    <form id="reviewForm">
-      <textarea id="reviewText" name="reviewText" rows="4" style="width: 100%; padding: 8px;"
-        placeholder="Write your review here..."></textarea>
-      <br>
-      <button type="submit" style="margin-top: 8px;">Submit Review</button>
-    </form>
-  </div>
-
+  <app-review *ngIf="showReviewForm"></app-review>
 </body>
