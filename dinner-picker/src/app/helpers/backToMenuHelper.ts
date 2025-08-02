@@ -14,6 +14,6 @@ export class BackToMenuHelperComponent {
     constructor(private router: Router) { }
 
     backToMenu(): void {
-        this.router.navigate(['/dinner-menu']);
+        this.router.navigate(['/dinner-menu-component']);
     }
 }
