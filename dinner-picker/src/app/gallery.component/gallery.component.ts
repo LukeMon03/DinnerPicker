@@ -2,12 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-gallary.component',
+  selector: 'app-gallery.component',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './gallary.component.html',
-  styleUrl: './gallary.component.css'
+  templateUrl: './gallery.component.html',
+  styleUrl: './gallery.component.css'
 })
-export class GallaryComponent {
+export class GalleryComponent {
 
 }

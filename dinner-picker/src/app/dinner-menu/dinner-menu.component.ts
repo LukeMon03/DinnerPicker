@@ -21,7 +21,7 @@ export class DinnerMenuComponent {
     this.router.navigate(['/review-dinner-component']);
   }}
 
-  goToGallary(): void {{
-    this.router.navigate(['/gallary-component']);
+  goToGallery(): void {{
+    this.router.navigate(['/gallery-component']);
   }}
 }
