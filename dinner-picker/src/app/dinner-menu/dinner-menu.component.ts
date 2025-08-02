@@ -13,7 +13,15 @@ export class DinnerMenuComponent {
   constructor(private router: Router) {
   }
 
-  openSpinner(): void {{
+  goToRecipePicker(): void {{
     this.router.navigate(['/recipe-selector-component']);
+  }}
+
+  goToReview(): void {{
+    this.router.navigate(['/review-dinner-component']);
+  }}
+
+  goToGallary(): void {{
+    this.router.navigate(['/gallary-component']);
   }}
 }

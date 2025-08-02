@@ -1,10 +1,20 @@
 <body class="d-flex vh-100 justify-content-center align-items-center">
     <div class="container">
         <h1 class="text-center mt-4 float-in" style="animation-duration: 0.5s;">Hi Becca and Luke!</h1>
-        <h2 class="text-center float-in" style="animation-duration: 0.8s;">Are you ready to find out what's for dinner?</h2>
-
-        <div class="text-center float-in" style="animation-duration: 1.5s;">
-            <button (click)="openSpinner()">What's for dinner?</button>
+        <h2 class="text-center float-in" style="animation-duration: 0.8s;">What are we doing today?</h2>
+        <br>
+        <div class="dinner-menu">
+            <div class="text-center float-in " style="animation-duration: 1.5s;">
+                <button class="menu-button" (click)="goToRecipePicker()">What's for dinner?</button>
+            </div>
+            <br>
+            <div class="text-center float-in" style="animation-duration: 1.7s;">
+                <button class="menu-button" (click)="goToReview()">We just had dinner!</button>
+            </div>
+            <br>
+            <div class="text-center float-in" style="animation-duration: 2.0s;">
+                <button class="menu-button" (click)="goToGallary()">Gallary</button>
+            </div>
         </div>
     </div>
 </body>
