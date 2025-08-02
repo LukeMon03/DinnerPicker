@@ -1,0 +1,36 @@
+<body class="d-flex flex-column vh-100 justify-content-center align-items-center float-in"
+  style="animation-duration: 1.0s;">
+  <h1>Code: e32shc</h1>
+  <br>
+  <div class="d-flex w-100 mb-3" style="max-width: 800px;">
+    <div class="col-sm-6 d-flex flex-fill" style="background-color: transparent;">
+      <div class="card border-dinner mb-4 flex-fill d-flex flex-column">
+        <div class="card-body text-dinner flex-fill d-flex flex-column">
+          <h5 class="card-title">Dinner</h5>
+          <ul class="list-unstyled">
+            <li><strong>Book:</strong> Texture over taste</li>
+            <li><strong>Recipe:</strong> Juicy beef burger mixed with a side of lovely green peas</li>
+            <li><strong>Page number(s):</strong> 15</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 d-flex flex-fill" style="background-color: transparent;">
+      <div class="card border-dessert mb-4 flex-fill d-flex flex-column">
+        <div class="card-body text-dessert flex-fill d-flex flex-column">
+          <h5 class="card-title">Dessert</h5>
+          <ul class="list-unstyled">
+            <li><strong>Book:</strong> Desserts4You</li>
+            <li><strong>Recipe:</strong> Cheese cake</li>
+            <li><strong>Page number(s):</strong> 75 - 77</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <button *ngIf="showReviewButton" class="float-in" style="animation-duration:5.0s;" id="reviewButton" (click)="openReview()">Review</button>
+  </div>
+  <app-review *ngIf="showReviewForm"></app-review>
+</body>

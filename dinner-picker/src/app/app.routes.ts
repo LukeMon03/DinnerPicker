@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
 import { DinnerMenuComponent } from './dinner-menu/dinner-menu.component';
-import { Spinner } from './spinner/spinner';
+import { RecipeSelectorComponent } from './recipe-selector/recipe-selector.component';
 
 export const routes: Routes = [
     { path: 'dinner-menu-component', component: DinnerMenuComponent },
-    { path: 'spinner', component: Spinner}
+    { path: 'recipe-selector-component', component: RecipeSelectorComponent}
 ];

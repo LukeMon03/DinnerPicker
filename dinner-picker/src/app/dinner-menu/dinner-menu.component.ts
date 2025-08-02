@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-dinner-menu',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './dinner-menu.component.html',
@@ -14,6 +14,6 @@ export class DinnerMenuComponent {
   }
 
   openSpinner(): void {{
-    this.router.navigate(['/spinner']);
+    this.router.navigate(['/recipe-selector-component']);
   }}
 }
