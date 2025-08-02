@@ -1,4 +1,4 @@
-button {
+.standard-button {
   padding: 17px 40px;
   border-radius: 50px;
   cursor: pointer;
@@ -11,14 +11,31 @@ button {
   transition: all 0.5s ease;
 }
 
-button:hover {
+.breadcrumb-button {
+    position: fixed;
+  top: 16px;
+  left: 16px;
+  padding: 8px 16px; /* Much smaller */
+  border-radius: 25px; /* Still pill-shaped but more subtle */
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 6px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 12px; /* Smaller text */
+  transition: all 0.3s ease;
+  z-index: 1000; /* Ensures visibility */
+}
+
+.standard-button:hover, .breadcrumb-button:hover {
   letter-spacing: 3px;
   background-color: hsl(261deg 80% 48%);
   color: hsl(0, 0%, 100%);
   box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
 }
 
-button:active {
+.standard-button:active, .breadcrumb-button:active {
   letter-spacing: 3px;
   background-color: hsl(261deg 80% 48%);
   color: hsl(0, 0%, 100%);
@@ -33,9 +50,15 @@ body{
 }
 
 .mainBody {
-  background: linear-gradient(135deg, #2b0f49, #7209b7, #2b0f49, #4643ee, #2b0f49);
+  background: linear-gradient(135deg, 
+    #2e004f,   /* very dark purple */
+    #4b007f,   /* deep purple */
+    #6a00b8,   /* rich neon purple */
+    #4b007f,   /* deep purple */
+    #2e004f    /* very dark purple */
+  );
   background-size: 400% 400%;
-  animation: synthwaveBackground 15s ease infinite;
+  animation: synthwaveBackground 20s ease infinite;
   color: #f0f0f0;
   font-family: 'Orbitron', sans-serif;
   text-align: center;
@@ -115,3 +138,4 @@ h1, h2 {
     0 0 8px #7209b7,
     0 0 12px #4361ee;
 }
+

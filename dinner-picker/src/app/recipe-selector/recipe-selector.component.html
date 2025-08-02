@@ -1,5 +1,5 @@
-<body class="d-flex flex-column vh-100 justify-content-center align-items-center float-in"
-  style="animation-duration: 1.0s;">
+<body class="d-flex flex-column vh-100 justify-content-center align-items-center float-in" style="animation-duration: 1.0s;">
+   <app-back-to-menu></app-back-to-menu>
   <h1>Code: e32shc</h1>
   <br>
   <div class="d-flex w-100 mb-3" style="max-width: 800px;">
@@ -30,7 +30,7 @@
   </div>
 
   <div>
-    <button *ngIf="showReviewButton" class="float-in" style="animation-duration:5.0s;" id="reviewButton" (click)="openReview()">Review</button>
+    <button *ngIf="showReviewButton" class="float-in standard-button" style="animation-duration:5.0s;" id="reviewButton" (click)="openReview()">Review</button>
   </div>
-  <app-review *ngIf="showReviewForm"></app-review>
+  <app-review-form *ngIf="showReviewForm"></app-review-form>
 </body>

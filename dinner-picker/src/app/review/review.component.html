@@ -1,38 +1,7 @@
-<form #reviewForm="ngForm" (ngSubmit)="onSubmit(reviewForm)" class="float-in mt-4"
-    style="max-width: 800px; width: 100%; animation-duration:1.0s;">
-
-    <!-- Code input -->
-    <div class="mb-3">
-        <label for="reviewCode" class="form-label">Code</label>
-        <input type="text" id="reviewCode" name="code" class="form-control" ngModel placeholder="Enter code" />
+<body body class="d-flex flex-column vh-100 justify-content-center align-items-center float-in"
+    style="animation-duration: 1.0s;">
+    <div class="container-fluid px-4">
+        <app-back-to-menu></app-back-to-menu>
+        <app-review-form></app-review-form>
     </div>
-
-    <!-- Text area -->
-    <div class="mb-3">
-        <label for="reviewText" class="form-label">Your Review</label>
-        <textarea id="reviewText" name="text" rows="4" class="form-control" ngModel
-            placeholder="Write your review here..."></textarea>
-    </div>
-
-    <!-- File upload -->
-    <div class="mb-3">
-        <label class="form-label">Media (Image or Video)</label>
-        <input type="file" id="mediaUpload" name="media" hidden (change)="onFileSelected($event)" />
-        <label for="mediaUpload" class="custom-file-upload">Upload Media</label>
-        <div class="file-name" *ngIf="selectedFileName">{{ selectedFileName }}</div>
-    </div>
-
-    <!-- Rating -->
-    <div class="mb-3">
-        <label for="rating" class="form-label">Rating</label>
-        <select name="rating" id="rating" class="form-select" ngModel>
-            <option value="" disabled selected>Select a rating</option>
-            <option *ngFor="let r of [1,2,3,4,5]" [value]="r">{{ r }} Star{{ r > 1 ? 's' : '' }}</option>
-        </select>
-    </div>
-
-    <!-- Submit -->
-    <div class="mb-3">
-        <button type="submit">Submit Review</button>
-    </div>
-</form>
+</body>

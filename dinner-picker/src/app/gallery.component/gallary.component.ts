@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { BackToMenuHelperComponent } from '../helpers/backToMenuHelper';
+import { BackToMenuHelperComponent } from "../helpers/backToMenuHelper";
 
 @Component({
   selector: 'app-gallery.component',
